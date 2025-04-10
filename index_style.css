@@ -1,18 +1,20 @@
 *{
     padding: 0px;
     margin: 2px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif;
+    line-height: 1.5;
     box-sizing: border-box;
 }
 body{
     text-align: center;
-    color: #333333;
+    color: #778da9;
+    background-color: #0d1b2a;
 }
 #header{
-    background-color: #014399;
+    background-color: #1b263b;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 40px;
     box-shadow: none;
     transition: box-shadow 0.3s ease;
@@ -51,8 +53,7 @@ ul li a{
 ul li a:hover{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    color: rgb(22, 69, 131);
-    transition-delay: 0.09s;
+    color: rgb(1,1, 23);
 }
 #git img{
     height: 42px;
@@ -61,7 +62,7 @@ ul li a:hover{
     top: 2px;
 }
 #header:hover{
-    box-shadow: 0px 25px 60px rgb(2, 94, 186); 
+    box-shadow: 0px 20px 30px #778da9;
     transition-delay: 0.0001s;
 }
 #slide-pic{
@@ -77,4 +78,62 @@ ul li a:hover{
     top: -64px;
     left: -4px;
     z-index:-1;
+}
+h1{
+    text-decoration:underline;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content div{
+    display: inline-block;
+}
+.profile{
+    height:600px;
+    width: 600px;
+    background-image: url(assets/profile.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: 0px;
+    
+}
+.textcontent{
+    padding: 6px 6px 6px 6px;
+    font-size: 50px;
+}
+.texthlt{
+    color: #e0e1dd;
+    font-size: 60px;
+}
+/*#profile{
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+    background-image: url(assets/profile.jpeg);
+    background-size: cover;
+    background-position: 0px;
+    border-radius: 50%;
+    float: right;
+    transition: height width 0.3s ease;
+}*/
+.profile:hover{
+    box-shadow: 10px 10px 20px #778da9;
+}
+.textcontent:hover{
+    border: 2px solid #e0e1dd;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #778da9;
+}
+.footer{
+    background-color: black;
+    color:#e0e1dd;
+    font-size: 18px;
+    padding-top: 20px;
+    height: 70px;
+    position: fixed;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
 }
