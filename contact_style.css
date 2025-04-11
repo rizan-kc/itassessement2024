@@ -7,10 +7,11 @@
 }
 body{
     text-align: center;
-    color: #778da9;
+    color: white;
     background-color: #0d1b2a;
     box-sizing:border-box;
     overflow-x: hidden;
+
 }
 #header{
     background-color: #1b263b;
@@ -32,8 +33,7 @@ body{
     position: relative;
     top: 10px;
     /*background-image: url();
-    background-size: cover;*/
-     
+    background-size: cover;*/   
 }
 ul{
     height: 50px;
@@ -68,31 +68,58 @@ ul li a:hover{
     box-shadow: 0px 20px 30px #778da9;
     transition-delay: 0.0001s;
 }
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: space-between;
+#background{
+    height: 250px;
+    width: 100vw;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: 0px -200px;
+    
+    box-shadow: 0px 2px 10px black;
+    margin: 0px;
+    position: relative;
+    top: -64px;
+    left: -4px;
+    z-index:-1;
 }
-.pictures{    
-    width: auto;
-    margin: 20px;
-    display: inline-block
+#contact_form{
+    border-radius: 30px;
+    text-align: none;
+    width: 800px;
+    background-color: #1b263b;
+    height:auto;
+    padding-top: 20px;  
 }
-.pictures a img{
-    height: 300px;
-    width: 400px;
-    border-radius: 20px;
-    margin-right: 40px;
-    border: 1px solid white;
-    object-fit: cover;
-    object-position: 2px;
-}
-.pictures a img:hover{
-    box-shadow: 2px 2px 20px #778da9;
-}
-.description h3{
+form input{
+    width: 500px;
+    height: 35px;
+    background-color: #778da9;
+    border: 0px solid black;
+    border-radius: 10px;
     text-align: center;
     color: #e0e1dd;
+
+}
+textarea{
+    width: 500px;
+    height: 200px;
+    background-color: #778da9;
+    border: 1px solid black;
+    border-radius: 10px;;
+    text-align: center;
+    padding-top: 10px;
+    color: #e0e1dd;
+}
+p a{
+    color: white;
+    text-decoration: none;
+    font-style: oblique;
+}
+#contact_form input::placeholder, textarea::placeholder{
+    color:#e0e1dd;
+}
+#contact_form input:hover, textarea:hover{
+    box-shadow: 0px 2px 10px #778da9;
 }
 footer{
     height: 80%;
