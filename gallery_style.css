@@ -7,7 +7,7 @@
 }
 body{
     text-align: center;
-    color: #778da9;
+    color: white;
     background-color: #0d1b2a;
     box-sizing:border-box;
     overflow-x: hidden;
@@ -76,7 +76,7 @@ ul li a:hover{
 .pictures{    
     width: auto;
     margin: 20px;
-    display: inline-block
+    display: inline-block;
 }
 .pictures a img{
     height: 300px;

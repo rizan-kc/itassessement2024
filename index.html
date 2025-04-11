@@ -13,38 +13,42 @@
             <span style="font-size: small; letter-spacing: 4px;">Portfolio</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+            <ul> 
+                <li><a href="#">Home</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
                 <li><a href="contact.html" target="_blank">Contact</a></li>
                 <li><a href="about.html" target="_blank">About</a></li>
                 <li><a href="project.html" target="_blank">Projects</a></li>
             </ul>
         </nav>
-        <a id="git" href="https://github.com/rizan-kc" target="_blank"><img src="assets/github-mark-white.png"></a>
+        <a id="git" href="https://github.com/rizan-kc" target="_blank"><img src="assets/github-mark-white.png" alt="Github_logo"></a>
+        <a id="git" href="https://www.linkedin.com/in/rizan-kc-5b1583331/" target="_blank"><img src="assets/InBug-White.png" alt="Linked In logo"></a>
     </div>
-
-    <div id="slide-pic"></div>
+    <div class="slide-pic">
+        <img src="assets/Img1.jpg" class="pics">
+        <img src="assets/Img2.jpg" class="pics">
+        <img src="assets/Img3.jpg" class="pics">
+    
+        <button onclick="slidepre()" class="nav previous">&#10094;</button>
+        <button onclick="slidenext()" class="nav next">&#10095;</button>
+    </div>
+    <br><br>
     <center>
-        <h1>Welcome to Rizan's Portfolio</h1>
-        <hr size = 3 style="width:1400px;">
+            <h1>Welcome to Rizan's Portfolio</h1>
     </center>
     <br><br>
-    <div class = "content" align = "left">
+    <div class = "content">
         <div class="profile">
                 
         </div>
         <div class="textcontent">
-                Hello Everyone !
+                Hello Everyone,
                 My name is <br><span class="texthlt">Rizan K.C.</span><br>
-                I am a student at <span class="texthlt">UWE!</span><br> I am an AI-Enthusiast currently doing<br>
+                I am a student at <b>UWE!</b><br> I am an AI-Enthusiast currently doing<br>
                 bachelors in computing with <br>
                 specialization in <br><span class="texthlt">Artificial Intelligence.</span>
         </div>
     </div><br><br>
-    <center>
-        <hr size = 3 style="width:1400px;">
-    </center>
     <br>
     <div id="bodycontent">
         <h1 align = "left" style="margin-left: 35px;">Skills:</h1>
@@ -64,7 +68,11 @@
     </div>
     <br>
     <footer>
+        <a href="https://github.com/rizan-kc"><img src="assets/github-mark-white.png" height = "18"></a>
+        <a href="https://www.linkedin.com/in/rizan-kc-5b1583331/"><img src="assets/InBug-White.png" height = "18"></a>
+        <hr>
         &#169; Copyright 2025 Rizan K.C.
     </footer>
+    <script src="index_script.js"></script>
 </body>
 </html>
