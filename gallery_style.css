@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 2px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    color: #778da9;
+    background-color: #0d1b2a;
+    box-sizing:border-box;
+
+}
+#header{
+    background-color: #1b263b;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+    
+}
+#logo{
+    width: 40px;
+    height: 40px;
+    /*background-image: url();
+    background-size: cover;*/
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    top: 5px;
+    left: 8px;
+}
+ul{
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+    position: relative;
+}
+ul li{
+    padding-left: 15px;
+    display: inline-block;
+    list-style-type: none;
+}
+ul li a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 25px;
+}
+ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(1,1, 23);
+}
+#git img{
+    height: 42px;
+    position: relative;
+    right: 8px;
+    top: 2px;
+}
+#header:hover{
+    box-shadow: 0px 20px 30px #778da9;
+    transition-delay: 0.0001s;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pictures{    
+    width: auto;
+    margin: 20px;
+    display: inline-block
+}
+.pictures a img{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    margin-right: 40px;
+    border: 1px solid white;
+    object-fit: cover;
+    object-position: 2px;
+}
+.pictures a img:hover{
+    box-shadow: 2px 2px 20px #778da9;
+}
+.description h3{
+    text-align: left;
+    color: #e0e1dd;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color:#e0e1dd;
+    font-size: 15px;
+    padding: 15px 0px;
+    z-index: 1;
+    margin-left: 0px;
+}
